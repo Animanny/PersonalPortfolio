@@ -1,7 +1,7 @@
 (function () {
 
     // Will it be a storm or peaceful?
-    var COUNT = 250;
+    var COUNT = 666;
 
     // Get our cotaniner
     var snowContainer = document.querySelector('.snowContainer');
@@ -27,26 +27,32 @@
     }
 
     var Snowflake = function () {
-        this.x = 0;
-        this.y = 0;
-        this.vy = 0;
-        this.vx = 0;
-        this.r = 0;
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.vy = Math.abs(Math.random()-1) * -.28;
+        this.vx = this.vy;
 
-        this.reset();
+            // Bigger snow?
+            this.r = Math.random()+.55;
+            this.o = 0.5 + Math.random();
     }
 
     // You can set up the
     Snowflake.prototype.reset = function () {
-        this.x = Math.random() * width;
-        this.y = Math.random() * height;
+      if (Math.random() > 0.5){
+          this.x = width;
+          this.y = Math.random() * height;
+      } else {
+          this.x = Math.random() * width;
+          this.y = height;
+      }
 
         // More speed? Change this
-        this.vy =Math.random()*.25;
-        this.vx = this.vy*.35;
+        this.vy = Math.abs(Math.random()-1) * -.23;
+        this.vx = this.vy;
 
             // Bigger snow?
-            this.r = Math.random()+.5;
+            this.r = Math.random()+.55;
             this.o = 0.5 + Math.random();
     }
 
@@ -57,7 +63,6 @@
         snowflake;
     for (i = 0; i < COUNT; i++) {
         snowflake = new Snowflake();
-        snowflake.reset();
         snowflakes.push(snowflake);
     }
 
@@ -76,7 +81,7 @@
             ctx.closePath();
             ctx.fill();
 
-            if (snowflake.y > height) {
+            if (snowflake.y > height || snowflake.y < 0 || snowflake.x > width || snowflake.x < 0) {
                 snowflake.reset();
             }
         }

@@ -8,11 +8,11 @@ body {
     position: relative;
     text-align: center;
     justify-content: center;
-    height: 99vh;
+    height: 95vh;
 }
 
 #snow-canvas{
-    height:99vh;
+    height:95vh;
     width:100%;
     background-color: #171717;
     position: relative;
@@ -29,4 +29,8 @@ body {
 
 i{
  color:white;
+}
+
+.intro{
+  height:80vh;
 }
