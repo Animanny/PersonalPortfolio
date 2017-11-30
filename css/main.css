@@ -1,0 +1,35 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.snowContainer {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    height: 98vh;
+}
+
+#snow-canvas{
+    height:98vh;
+    width:100%;
+    background-color: #171717;
+    position: relative;
+    z-index: -1;
+}
+
+.intro{
+  height:0vh;
+}
+
+.info {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+i{
+ color:white;
+}
