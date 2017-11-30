@@ -8,20 +8,17 @@ body {
     position: relative;
     text-align: center;
     justify-content: center;
-    height: 98vh;
+    height: 99vh;
 }
 
 #snow-canvas{
-    height:98vh;
+    height:99vh;
     width:100%;
     background-color: #171717;
     position: relative;
     z-index: -1;
 }
 
-.intro{
-  height:0vh;
-}
 
 .info {
   position: relative;
