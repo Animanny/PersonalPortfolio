@@ -29,7 +29,7 @@
     var Snowflake = function () {
         this.x = Math.random() * width;
         this.y = Math.random() * height;
-        this.vy = Math.abs(Math.random()-1) * -.28;
+        this.vy = (.1+Math.abs(Math.random()-.5))* -.28;
         this.vx = this.vy;
 
             // Bigger snow?
