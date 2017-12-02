@@ -130,6 +130,12 @@
         {
           text:"Please upgrade your plan to see this quote",
           author:"Comcast"
+        },{
+          text:"'I'm just on a quest for serenity'",
+          author:"ani"
+        },{
+          text:"戦争",
+          author:""
         }
       ];
       var quote = quotes[Math.floor(Math.random() * quotes.length)];
