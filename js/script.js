@@ -29,11 +29,11 @@
     var Snowflake = function () {
         this.x = Math.random() * width;
         this.y = Math.random() * height;
-        this.vy = (.1+Math.abs(Math.random()-.5))* -.28;
+        this.r = Math.random()+.55;
+        this.vy = this.r*((.1+Math.abs(Math.random()-.5))* -.28);
         this.vx = this.vy;
 
             // Bigger snow?
-            this.r = Math.random()+.55;
             this.o = 0.5 + Math.random();
     }
 
@@ -48,11 +48,12 @@
       }
 
         // More speed? Change this
-        this.vy = Math.abs(Math.random()-1) * -.23;
+
+        this.r = Math.random()+.55;
+        this.vy = this.r*(Math.abs(Math.random()-1) * -.23);
         this.vx = this.vy;
 
             // Bigger snow?
-            this.r = Math.random()+.55;
             this.o = 0.5 + Math.random();
     }
 
@@ -108,10 +109,6 @@
 (function() {
       var quotes = [
         {
-          text: "'I never sleep, 'cause sleep is the cousin of death'",
-          author: "Nas"
-        },
-        {
           text: "'Name one genius that ain't crazy'",
           author: "Kanye"
         },
@@ -124,18 +121,11 @@
           author: "'Chinese Proverb'"
         },
         {
-          text:"'I'm not a business man, I'm a business, man'",
-          author:"Jay-Z"
-        },
-        {
           text:"Please upgrade your plan to see this quote",
           author:"Comcast"
         },{
           text:"'I'm just on a quest for serenity'",
           author:"ani"
-        },{
-          text:"戦争",
-          author:""
         }
       ];
       var quote = quotes[Math.floor(Math.random() * quotes.length)];
