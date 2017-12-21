@@ -29,32 +29,32 @@
     var Snowflake = function () {
         this.x = Math.random() * width;
         this.y = Math.random() * height;
-        this.r = Math.random()+.55;
-        this.vy = this.r*((.1+Math.abs(Math.random()-.5))* -.28);
+        this.r = Math.random() + .55;
+        this.vy = this.r * ((.1 + Math.abs(Math.random() - .5)) * -.28);
         this.vx = this.vy;
 
-            // Bigger snow?
-            this.o = 0.5 + Math.random();
+        // Bigger snow?
+        this.o = 0.5 + Math.random();
     }
 
     // You can set up the
     Snowflake.prototype.reset = function () {
-      if (Math.random() > 0.5){
-          this.x = width;
-          this.y = Math.random() * height;
-      } else {
-          this.x = Math.random() * width;
-          this.y = height;
-      }
+        if (Math.random() > 0.5) {
+            this.x = width;
+            this.y = Math.random() * height;
+        } else {
+            this.x = Math.random() * width;
+            this.y = height;
+        }
 
         // More speed? Change this
 
-        this.r = Math.random()+.55;
-        this.vy = this.r*(Math.abs(Math.random()-1) * -.23);
+        this.r = Math.random() + .55;
+        this.vy = this.r * (Math.abs(Math.random() - 1) * -.23);
         this.vx = this.vy;
 
-            // Bigger snow?
-            this.o = 0.5 + Math.random();
+        // Bigger snow?
+        this.o = 0.5 + Math.random();
     }
 
     canvas.style.position = 'absolute';
@@ -105,32 +105,3 @@
 
     snowContainer.appendChild(canvas);
 })();
-
-(function() {
-      var quotes = [
-        {
-          text: "'Name one genius that ain't crazy'",
-          author: "Kanye"
-        },
-        {
-          text: "'5 more minutes'",
-          author: "Me this morning"
-        },
-        {
-          text: "'The Person Who Says It Cannot Be Done Should Not Interrupt The Person Who Is Doing It''",
-          author: "'Chinese Proverb'"
-        },
-        {
-          text:"Please upgrade your plan to see this quote",
-          author:"Comcast"
-        },{
-          text:"'I'm just on a quest for serenity'",
-          author:"ani"
-        }
-      ];
-      var quote = quotes[Math.floor(Math.random() * quotes.length)];
-      document.getElementById("quote").innerHTML =
-        quote.text;
-      document.getElementById("author").innerHTML =
-        quote.author;
-    })();
