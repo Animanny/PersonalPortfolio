@@ -8,6 +8,18 @@ p {
     text-rendering: optimizeLegibility;
 }
 
+a {
+    color: #666;
+    text-decoration: underline;
+    text-decoration-color: #666;
+    transition: .15s;
+}
+
+a:hover {
+    text-decoration-color: white;
+}
+
+
 #selfie:hover {
     opacity: 50;
 }
@@ -39,7 +51,7 @@ i {
 }
 
 .intro {
-    height: 85vh;
+    height: 65vh;
     display: block;
 }
 
