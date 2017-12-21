@@ -11,12 +11,12 @@ p {
 a {
     color: #666;
     text-decoration: underline;
-    text-decoration-color: #666;
+    text-decoration-color: white;
     transition: .15s;
 }
 
 a:hover {
-    text-decoration-color: white;
+    text-decoration-color: #666;
 }
 
 
@@ -51,8 +51,17 @@ i {
 }
 
 .intro {
-    height: 65vh;
+    height: 40vh;
     display: block;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 20%;
+    background-color: white;
+    height: 2px;
 }
 
 #bodytext {
@@ -92,4 +101,9 @@ ul#horizontal-list li {
     color: #666;
     font-size: 30px;
     margin-top: 2.5vh;
+    text-decoration-skip: edges;
+}
+
+#menubutton a {
+    display: block;
 }
