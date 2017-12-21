@@ -1,9 +1,10 @@
-html,body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
-p{
+p {
     text-rendering: optimizeLegibility;
 }
 
@@ -17,9 +18,9 @@ p{
     height: 95vh;
 }
 
-#snow-canvas{
-    height:95vh;
-    width:100%;
+#snow-canvas {
+    height: 95vh;
+    width: 100%;
     background-color: #171717;
     position: relative;
     z-index: -1;
@@ -27,30 +28,30 @@ p{
 
 
 .info {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 
 }
 
-i{
- color:white;
+i {
+    color: white;
 }
 
-.intro{
-  height:85vh;
+.intro {
+    height: 85vh;
     display: block;
 }
 
-.bodytexts{
-    color:#666;
+.bodytext {
+    color: #666;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.7;
-    width:68vh;
+    width: 74vh;
     letter-spacing: .4;
     text-align: left;
 }
 
-nav p{
-    color:white
+nav p {
+    color: white
 }
