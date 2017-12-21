@@ -27,11 +27,11 @@ a:hover {
 .snowContainer {
     position: relative;
     justify-content: center;
-    height: 95vh;
+    height: 90vh;
 }
 
 #snow-canvas {
-    height: 95vh;
+    height: 90vh;
     width: 100%;
     background-color: #171717;
     position: relative;
@@ -65,4 +65,31 @@ i {
 
 nav p {
     color: white
+}
+
+#menu-outer {
+    height: 84px;
+    background: url(images/bar-bg.jpg) repeat-x;
+}
+
+.table {
+    display: table;
+    /* Allow the centering to work */
+    margin: 0 auto;
+}
+
+ul#horizontal-list {
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+ul#horizontal-list li {
+    display: inline;
+}
+
+#menubutton {
+    color: #666;
+    font-size: 30px;
+    margin-top: 2.5vh;
 }
