@@ -19,6 +19,17 @@ a:hover {
     text-decoration-color: #666;
 }
 
+#projectlink {
+    color: #666;
+    text-decoration: underline;
+    text-decoration-color: #666;
+    transition: .15s;
+}
+
+#projectlink:hover {
+    text-decoration-color: white;
+}
+
 
 #selfie:hover {
     opacity: 50;
