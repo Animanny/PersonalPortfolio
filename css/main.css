@@ -9,16 +9,13 @@ p {
 }
 
 a {
-    color: #666;
-    text-decoration: underline;
-    text-decoration-color: white;
-    transition: .15s;
+    text-decoration: none;
 }
 
-a:hover {
-    text-decoration-color: #666;
+h1, h2, h3, h4, h5, h6, p{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
-
 #projectlink {
     color: #666;
     text-decoration: underline;
@@ -32,6 +29,9 @@ a:hover {
 
 #selfie {
     margin-bottom: 5vh;
+    border-radius:50%;
+    width:250px;
+    border:#ffffff 10px solid;
 }
 
 #selfie:hover {
@@ -41,11 +41,15 @@ a:hover {
 .snowContainer {
     position: relative;
     justify-content: center;
-    height: 100vh;
+    min-height: 200vh;
+    display: block;
+    overflow: auto;
 }
 
 #snow-canvas {
-    height: 100vh;
+    height: 100%;
+    display: block;
+    overflow: auto;
     width: 100%;
     background-color: #171717;
     position: relative;
@@ -57,7 +61,11 @@ a:hover {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
 
+.info_container{
+
+    height:100vh;
 }
 
 i {
@@ -81,9 +89,11 @@ hr {
 }
 
 #bodytext {
-    color: #666;
+    color: rgba(0, 0, 0, 0.84);
+    font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.7;
+    line-height: 1.58;
+    letter-spacing: -0.004em;
     width: 75%;
     text-align: left;
 }
@@ -95,12 +105,6 @@ nav p {
 #menu-outer {
     height: 84px;
     background: url(images/bar-bg.jpg) repeat-x;
-}
-
-.table {
-    display: table;
-    /* Allow the centering to work */
-    margin: 0 auto;
 }
 
 ul#horizontal-list {
@@ -122,4 +126,151 @@ ul#horizontal-list li {
 
 #menubutton a {
     display: block;
+}
+
+.portfolio{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.portfolio_content{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    row-gap: 40px;
+    justify-items: center;
+}
+
+.exp_card{
+    display: grid;
+    grid-template-columns: 150px 200px;
+    column-gap: 20px;
+    height: 160px;
+    border: white 5px solid;
+    border-radius: 2px;
+    transition: opacity 0.25s;
+}
+
+.exp_card:hover{
+    opacity: 80%;
+}
+
+.exp_card img{
+    width: 150px;
+}
+
+#desc_content{
+    position: relative;top: 50%;transform: translateY(-50%);
+}
+
+.projects{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.projects_content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
+    row-gap: 40px;
+    justify-items: center;
+}
+
+.project_card{
+    display: grid;
+    grid-template-rows: 200px 60px;
+    column-gap: 20px;
+    width: 210px;
+    border: white 5px solid;
+    border-radius: 2px;
+    transition: opacity 0.25s;
+}
+
+.project_card:hover{
+    opacity: 80%;
+}
+
+.project_card img{
+    width: 200px;
+}
+
+#desc_content{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 760px) {
+    .portfolio{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .portfolio_content{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 50px;
+    }
+
+    .exp_card{
+        display: grid;
+        grid-template-columns: 110px 180px;
+        justify-items: left;
+        height: 120px;
+    }
+
+    .exp_card #desc{
+        width: 150px;
+    }
+    
+    .exp_card img{
+        width:110px;
+    }
+
+    #selfie{
+        width: 225px;
+    }
+
+    .projects{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .projects_content{
+        display: grid;
+        grid-template-columns: auto auto ;
+        column-gap: 20px;
+        row-gap: 40px;
+        justify-items: center;
+    }
+
+    .project_card{
+        display: grid;
+        grid-template-rows: 125px 60px;
+        column-gap: 20px;
+        width: 135px;
+        border: white 5px solid;
+        border-radius: 2px;
+        transition: opacity 0.25s;
+    }
+    
+    .project_card:hover{
+        opacity: 80%;
+    }
+    
+    .project_card img{
+        width: 125px;
+    }
+  }
+
+#hitmeup{
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 7px dotted white;
+}
+
+#hitmeup:hover {
+    border-bottom: none;
 }
