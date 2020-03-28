@@ -41,20 +41,33 @@ h1, h2, h3, h4, h5, h6, p{
 .snowContainer {
     position: relative;
     justify-content: center;
-    min-height: 200vh;
     display: block;
-    overflow: auto;
 }
 
 #snow-canvas {
     height: 100%;
     display: block;
-    overflow: auto;
     width: 100%;
     background-color: #171717;
     position: relative;
     z-index: -1;
 }
+
+.about_snowContainer {
+    position: relative;
+    justify-content: center;
+    display: block;
+}
+
+#about-snow-canvas {
+    height: 100%;
+    display: block;
+    width: 100%;
+    background-color: #171717;
+    position: relative;
+    z-index: -1;
+}
+
 
 
 .info {
