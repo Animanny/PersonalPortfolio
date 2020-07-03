@@ -185,7 +185,7 @@ p {
 	margin-right: auto;
 	width: 100%;
 	display: grid;
-	grid-template-columns: 300px 300px auto;
+	grid-template-columns: 25% 25% 50%;
 }
 
 #aboutPic {
@@ -240,7 +240,8 @@ p {
 #contactContent p {
 	align-self: center;
 	margin-top: 5px;
-	margin-bottom: 5px;
+    margin-bottom: 5px;
+    font-size:18px;
 }
 
 #contactContent a {
