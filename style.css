@@ -321,8 +321,8 @@ p {
 }
 
 #buttonArrow {
-	height: 50%;
-	width: 60%;
+	height: 50% !important;
+	width: 60% !important;
 	margin-top: 26%;
 	margin-left: 7%;
 }
