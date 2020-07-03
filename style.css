@@ -1,0 +1,445 @@
+body {
+	background-color: #0e0e0e;
+	margin: 0px 0px 0px 0px;
+	cursor: crosshair;
+}
+
+#starCanvas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: #0e0e0e;
+	z-index: -1;
+}
+
+#starContainer {
+	position: relative;
+	justify-content: center;
+	display: block;
+	width: 100%;
+}
+
+#landing {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100vh;
+}
+
+#landing h1 {
+	font-family: "Libre Baskerville", serif;
+	color: white;
+	font-size: 80px;
+	user-select: none;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#landing p {
+	text-align: center;
+}
+
+#landing a {
+	text-align: center;
+	font-family: "Karla", sans-serif;
+	font-size: 14px;
+	display: inline-block;
+	background-color: #0b0b0b;
+	width: 200px;
+	height: 44px;
+	color: white;
+	border: 1px solid;
+	border-radius: 44px;
+	margin-left: calc((100% - 200px) / 2);
+	text-decoration: none;
+	line-height: 44px;
+	transition: 0.25s;
+}
+
+#landing a:hover {
+	background-color: orange;
+}
+
+#landingContent {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#experiences {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 150px 150px 150px 150px;
+	align-items: center;
+	justify-items: center;
+	width: 1250px;
+	margin-left: calc((100% - 1250px) / 2);
+	padding-bottom: 250px;
+	text-align: center;
+	color: white;
+}
+
+#experiences h1 {
+	font-family: "Libre Baskerville", serif;
+	color: white;
+	font-size: 45px;
+	user-select: none;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+#experiences h2 {
+	font-size: 35px;
+	font-family: "Libre Baskerville", serif;
+	margin-bottom: 15px;
+	margin-top: 0px;
+}
+
+#experiences h4 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 20px;
+	font-family: "Karla", sans-serif;
+	font-weight: 100;
+}
+
+#experienceImg {
+	height: 100%;
+	grid-row-start: 2;
+	grid-row-end: 5;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+#experienceImg img {
+	height: 90%;
+	border-radius: 10%;
+}
+
+#intuit {
+	grid-row-start: 2;
+	transition: transform 0.3s ease-out;
+}
+
+#intuit:hover {
+	transform: translate(0, -5px);
+}
+
+#google {
+	grid-row-start: 3;
+	transition: transform 0.3s ease-out;
+}
+
+#google:hover {
+	transform: translate(0, -5px);
+}
+
+#cipher {
+	grid-row-start: 4;
+	transition: transform 0.3s ease-out;
+}
+
+#cipher:hover {
+	transform: translate(0, -5px);
+}
+
+#projects {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto auto auto auto;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 200px;
+}
+
+#projects h1 {
+	font-family: "Libre Baskerville", serif;
+	color: white;
+	font-size: 45px;
+	user-select: none;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+p {
+	color: white;
+	font-weight: 100;
+	font-family: "Karla", sans-serif;
+	font-size: 25px;
+	line-height: 34px;
+	user-select: none;
+}
+
+#about-content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 300px 300px auto;
+}
+
+#aboutPic {
+	background-image: url("images/selfie.JPG");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	grid-column-start: 1;
+}
+
+#about-content #text {
+	grid-column-start: 2;
+	width: 90%;
+	margin-left: 5%;
+}
+
+#text h1 {
+	margin-top: 10px;
+}
+
+#text p {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+#about-content h1 {
+	color: white;
+	font-family: "Libre Baskerville", serif;
+	font-size: 40px;
+	user-select: none;
+}
+
+#contactContainer {
+	background-color: #ffa502;
+}
+
+#contactContent {
+	width: 90%;
+	margin-left: 5%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto auto auto auto;
+	padding-bottom: 15px;
+}
+
+#contactContent h1 {
+	font-size: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#contactContent p {
+	align-self: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#contactContent a {
+	text-decoration: none;
+}
+
+#contactBlurb {
+	margin-top: 0px;
+	margin-bottom: 15px !important;
+	grid-column-start: 1;
+}
+
+#contactContent i {
+	justify-self: center;
+	align-self: center;
+	color: white;
+}
+
+#igIcon {
+	grid-row-start: 3;
+}
+
+#githubIcon {
+	grid-row-start: 5;
+	grid-column-start: 1;
+}
+
+#twitterIcon {
+	grid-row-start: 4;
+	grid-column-start: 1;
+}
+
+#twitterHandle {
+	margin-left: 30px;
+}
+
+#igHandle {
+	margin-left: 30px;
+}
+
+#githubHandle {
+	margin-left: 30px;
+}
+
+#github a {
+	display: flex;
+	width: fit-content;
+}
+
+#twitter a {
+	display: flex;
+	width: fit-content;
+}
+
+#ig a {
+	display: flex;
+	width: fit-content;
+}
+
+#buttonShadow {
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	background-color: #fba5007d;
+	border-radius: 50%;
+	margin-top: -348px;
+	margin-left: -36.5px;
+}
+
+#buttonHard {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: orange;
+	position: absolute;
+	margin-top: -335px;
+	margin-left: -25px;
+}
+
+#buttonArrow {
+	height: 50%;
+	width: 60%;
+	margin-top: 26%;
+	margin-left: 7%;
+}
+
+@media screen and (max-device-width: 480px) {
+	#experiences {
+		display: grid;
+		grid-template-columns: 90%;
+		grid-template-rows: 50px 150px 150px 150px auto;
+		align-items: center;
+		justify-items: center;
+		width: 350px;
+		margin-left: calc((100% - 350px));
+		padding-bottom: 250px;
+		text-align: center;
+		color: white;
+	}
+
+	#experiences h1 {
+		font-family: "Libre Baskerville", serif;
+		color: white;
+		font-size: 45px;
+		user-select: none;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		grid-column-end: 2;
+	}
+
+	#intuit {
+		grid-row-start: auto;
+		grid-row-end: auto;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		transition: transform 0.3s ease-out;
+	}
+
+	#intuit:hover {
+		transform: translate(0, -5px);
+	}
+
+	#google {
+		grid-row-start: auto;
+		grid-row-end: auto;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		transition: transform 0.3s ease-out;
+	}
+
+	#google:hover {
+		transform: translate(0, -5px);
+	}
+
+	#cipher {
+		grid-row-start: auto;
+		grid-row-end: auto;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		transition: transform 0.3s ease-out;
+	}
+
+	#cipher:hover {
+		transform: translate(0, -5px);
+	}
+
+	#experienceImg {
+		width: 100%;
+		height: auto;
+		grid-row-start: auto;
+		grid-row-end: auto;
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
+
+	#experienceImg img {
+		height: auto;
+		width: 90%;
+		border-radius: 10%;
+	}
+
+	#about-content {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+
+	#contactContainer {
+		grid-column-start: 1;
+		grid-column-end: 3;
+    }
+    
+    #buttonShadow {
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        background-color: #fba5007d;
+        border-radius: 50%;
+        margin-top: -250px;
+        margin-left: 260px;
+    }
+    
+    #buttonHard {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: orange;
+        position: absolute;
+        margin-top: -238px;
+        margin-left: 272.5px;
+    }
+    
+    #buttonArrow {
+        height: 50% !important;
+        width: 65% !important;
+        margin-top: 26%;
+        margin-left: 7%;
+    }
+}
