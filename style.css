@@ -331,7 +331,7 @@ p {
 @media screen and (max-device-width: 480px) {
 	#experiences {
 		display: grid;
-		grid-template-columns: 100;
+		grid-template-columns: 100%;
 		grid-template-rows: 50px 150px 150px 150px auto;
 		align-items: center;
 		justify-items: center;
