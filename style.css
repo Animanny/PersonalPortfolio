@@ -61,7 +61,7 @@ body {
 }
 
 #landing a:hover {
-	background-color: orange;
+	background-color: #ffa03e;
 }
 
 #landingContent {
@@ -315,7 +315,7 @@ p {
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
-	background-color: orange;
+	background-color: #ffa03e;
 	position: absolute;
 	margin-top: -335px;
 	margin-left: -25px;
@@ -431,7 +431,7 @@ p {
         border-radius: 50%;
         width: 50px;
         height: 50px;
-        background-color: orange;
+        background-color: #ffa03e;
         position: absolute;
         margin-top: -238px;
         margin-left: 272.5px;

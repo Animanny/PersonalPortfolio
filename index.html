@@ -1,225 +1,225 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Ani Srikanth</title>
-		<script
-			src="https://kit.fontawesome.com/2ddbd86bc7.js"
-			crossorigin="anonymous"
-		></script>
-		<!-- Font Links -->
-		<link
-			href="https://fonts.googleapis.com/css2?family=Karla&family=Libre+Baskerville&display=swap"
-			rel="stylesheet"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ani Srikanth</title>
+	<meta name="description" content="The personal engineering portfolio of Ani Srikanth">
 
-		<link rel="stylesheet" href="style.css" />
-		<script src="script.js"></script>
-	</head>
+    <!-- FB Meta Tags -->
+    <meta property="og:url" content="https://animanny.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ani Srikanth - Portfolio">
+    <meta property="og:description" content="The personal engineering portfolio of Ani Srikanth">
+    <meta property="og:image" content="images/preview.png">
 
-	<body>
-		<div id="starContainer">
-			<div id="landing">
-				<div id="landingContent">
-					<h1>ani srikanth</h1>
-					<p>computer engineering @ UofT</p>
-					<a
-						href="https://drive.google.com/file/d/19dq-Ondfnbl6P7H-IoK4MHlrLrjfoz1f/view"
-						>RESUME</a
-					>
-				</div>
-			</div>
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="animanny.com">
 
-			<div id="experiences">
-				<h1>work</h1>
-				<div id="intuit" onmouseover="experienceImgHandler('htn')">
-					<h2>vr wizard chess</h2>
-					<h4>Hack The North 2018 Winner</h4>
-				</div>
-				<div
-					id="google"
-					onmouseover="experienceImgHandler('capriccio')"
-				>
-					<h2>capriccio</h2>
-					<h4>Handwritten Sheet Music Synthesized</h4>
-				</div>
-				<div id="cipher" onmouseover="experienceImgHandler('cipher')">
-					<h2>cipher</h2>
-					<h4>youth code community</h4>
-				</div>
-				<div id="experienceImg">
-					<img id="experienceImage" src="images/hackTheNorth.png" />
-					<a
-						id="projecLink"
-						href="https://devpost.com/software/harry-potter-vr-chess-board"
-					>
-						<div id="buttonShadow"></div>
-						<div id="buttonHard">
-							<img id="buttonArrow" src="images/arrow.png" />
-						</div>
-					</a>
-				</div>
-			</div>
-			<canvas id="starCanvas"></canvas>
-		</div>
-		<div id="about-content">
-			<div id="aboutPic"></div>
-			<div id="text">
-				<h1>about</h1>
-				<p>
-					I'm a Computer Engineering student from Toronto, Canada. I
-					love hip-hop, movies, and writing software. My dream is to
-					be able to work on the next Mars rover mission!
-				</p>
-			</div>
-			<div id="contactContainer">
-				<div id="contactContent">
-					<h1>contact</h1>
-					<p id="contactBlurb">Wanna talk tech? Let's grab coffee!</p>
-					<div id="github">
-						<a href="http://github.com/animanny">
-							<i id="githubIcon" class="fab fa-github fa-2x"></i>
-							<p id="githubHandle">@animanny</p>
-						</a>
-					</div>
-					<div id="ig">
-						<a href="http://instagram.com/animanny">
-							<i id="igIcon" class="fab fa-instagram fa-2x"></i>
-							<p id="igHandle">@animanny</p>
-						</a>
-					</div>
-					<div id="twitter">
-						<a href="http://twitter.com/digitalkami">
-							<i
-								id="twitterIcon"
-								class="fab fa-twitter fa-2x"
-							></i>
-							<p id="twitterHandle">@digitalkami (don't ask)</p>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+    <meta name="theme-color" content="#6aaa64" />
+    <script
+      src="https://kit.fontawesome.com/2ddbd86bc7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Links -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
 
-		<script>
-			// Will it be a storm or peaceful?
-			var COUNT = 650;
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
 
-			// Get our cotaniner
-			var snowContainer = document.getElementById("starContainer");
+  <body>
+    <div id="starContainer">
+      <div id="landing">
+        <div id="landingContent">
+          <h1>ani srikanth</h1>
+          <p>computer engineering @ UofT</p>
+          <a
+            href="https://drive.google.com/file/d/19dq-Ondfnbl6P7H-IoK4MHlrLrjfoz1f/view"
+            >RESUME</a
+          >
+        </div>
+      </div>
 
-			// Create the canvas element
-			var canvas = document.getElementById("starCanvas");
-			var ctx = canvas.getContext("2d");
+      <div id="experiences">
+        <h1>work</h1>
+        <div id="intuit" onmouseover="experienceImgHandler('htn')">
+          <h2>vr wizard chess</h2>
+          <h4>Hack The North 2018 Winner</h4>
+        </div>
+        <div id="google" onmouseover="experienceImgHandler('capriccio')">
+          <h2>capriccio</h2>
+          <h4>Handwritten Sheet Music Synthesized</h4>
+        </div>
+        <div id="cipher" onmouseover="experienceImgHandler('cipher')">
+          <h2>cipher</h2>
+          <h4>youth code community</h4>
+        </div>
+        <div id="experienceImg">
+          <img id="experienceImage" src="images/hackTheNorth.png" />
+          <a
+            id="projecLink"
+            href="https://devpost.com/software/harry-potter-vr-chess-board"
+          >
+            <div id="buttonShadow"></div>
+            <div id="buttonHard">
+              <img id="buttonArrow" src="images/arrow.png" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <canvas id="starCanvas"></canvas>
+    </div>
+    <div id="about-content">
+      <div id="aboutPic"></div>
+      <div id="text">
+        <h1>about</h1>
+        <p>
+          I'm a Computer Engineering student from Toronto, Canada. I love
+          hip-hop, movies, and writing software. My dream is to be able to work
+          on the next Mars rover mission!
+        </p>
+      </div>
+      <div id="contactContainer">
+        <div id="contactContent">
+          <h1>contact</h1>
+          <p id="contactBlurb">Wanna talk tech? Let's grab coffee!</p>
+          <div id="github">
+            <a href="http://github.com/animanny">
+              <i id="githubIcon" class="fab fa-github fa-2x"></i>
+              <p id="githubHandle">@animanny</p>
+            </a>
+          </div>
+          <div id="ig">
+            <a href="http://instagram.com/animanny">
+              <i id="igIcon" class="fab fa-instagram fa-2x"></i>
+              <p id="igHandle">@animanny</p>
+            </a>
+          </div>
+          <div id="twitter">
+            <a href="http://twitter.com/digitalkami">
+              <i id="twitterIcon" class="fab fa-twitter fa-2x"></i>
+              <p id="twitterHandle">@digitalkami (don't ask)</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			// Get the size of the container, that's why we defined the height in the HTML
-			var width = snowContainer.clientWidth;
-			var height = snowContainer.clientHeight;
-			var i = 0;
-			var active = false;
+    <script>
+      // Will it be a storm or peaceful?
+      var COUNT = 650;
 
-			function onResize() {
-				width = snowContainer.clientWidth;
-				height = snowContainer.clientHeight;
-				canvas.width = width;
-				canvas.height = height;
-				ctx.fillStyle = "#FFF";
+      // Get our cotaniner
+      var snowContainer = document.getElementById("starContainer");
 
-				requestAnimFrame(update);
-			}
+      // Create the canvas element
+      var canvas = document.getElementById("starCanvas");
+      var ctx = canvas.getContext("2d");
 
-			var Snowflake = function () {
-				this.x = Math.random() * width;
-				this.y = Math.random() * height;
-				this.r = Math.random() + 0.55;
-				this.vy =
-					this.r * ((0.1 + Math.abs(Math.random() - 0.5)) * -0.28);
-				this.vx = this.vy;
+      // Get the size of the container, that's why we defined the height in the HTML
+      var width = snowContainer.clientWidth;
+      var height = snowContainer.clientHeight;
+      var i = 0;
+      var active = false;
 
-				// Transparent snow?
-				this.opacity = 0.5 + Math.random();
-			};
+      function onResize() {
+        width = snowContainer.clientWidth;
+        height = snowContainer.clientHeight;
+        canvas.width = width;
+        canvas.height = height;
+        ctx.fillStyle = "#FFF";
 
-			Snowflake.prototype.reset = function () {
-				if (Math.random() > 0.5) {
-					this.x = width;
-					this.y = Math.random() * height;
-				} else {
-					this.x = Math.random() * width;
-					this.y = height;
-				}
+        requestAnimFrame(update);
+      }
 
-				// More speed? Change this
+      var Snowflake = function () {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.r = Math.random() + 0.55;
+        this.vy = this.r * ((0.1 + Math.abs(Math.random() - 0.5)) * -0.28);
+        this.vx = this.vy;
 
-				this.r = Math.random() + 0.55;
-				this.vy = this.r * (Math.abs(Math.random() - 1) * -0.23);
-				this.vx = this.vy;
+        // Transparent snow?
+        this.opacity = 0.5 + Math.random();
+      };
 
-				// ?
-				this.opacity = 0.5 + Math.random();
-			};
+      Snowflake.prototype.reset = function () {
+        if (Math.random() > 0.5) {
+          this.x = width;
+          this.y = Math.random() * height;
+        } else {
+          this.x = Math.random() * width;
+          this.y = height;
+        }
 
-			canvas.style.position = "absolute";
-			canvas.style.left = canvas.style.top = "0";
+        // More speed? Change this
 
-			var snowflakes = [],
-				snowflake;
-			for (i = 0; i < COUNT; i++) {
-				snowflake = new Snowflake();
-				snowflakes.push(snowflake);
-			}
+        this.r = Math.random() + 0.55;
+        this.vy = this.r * (Math.abs(Math.random() - 1) * -0.23);
+        this.vx = this.vy;
 
-			function update() {
-				ctx.clearRect(0, 0, width, height);
+        // ?
+        this.opacity = 0.5 + Math.random();
+      };
 
-				for (i = 0; i < COUNT; i++) {
-					snowflake = snowflakes[i];
-					snowflake.y += snowflake.vy;
-					snowflake.x += snowflake.vx;
+      canvas.style.position = "absolute";
+      canvas.style.left = canvas.style.top = "0";
 
-					ctx.globalAlpha = snowflake.opacity;
-					ctx.beginPath();
-					ctx.arc(
-						snowflake.x,
-						snowflake.y,
-						snowflake.r,
-						0,
-						Math.PI * 2,
-						false
-					);
-					ctx.closePath();
-					ctx.fill();
+      var snowflakes = [],
+        snowflake;
+      for (i = 0; i < COUNT; i++) {
+        snowflake = new Snowflake();
+        snowflakes.push(snowflake);
+      }
 
-					if (
-						snowflake.y > height ||
-						snowflake.y < 0 ||
-						snowflake.x > width ||
-						snowflake.x < 0
-					) {
-						snowflake.reset();
-					}
-				}
+      function update() {
+        ctx.clearRect(0, 0, width, height);
 
-				requestAnimFrame(update);
-			}
+        for (i = 0; i < COUNT; i++) {
+          snowflake = snowflakes[i];
+          snowflake.y += snowflake.vy;
+          snowflake.x += snowflake.vx;
 
-			// shim layer with setTimeout fallback
-			window.requestAnimFrame = (function () {
-				return (
-					window.requestAnimationFrame ||
-					window.webkitRequestAnimationFrame ||
-					window.mozRequestAnimationFrame ||
-					function (callback) {
-						window.setTimeout(callback, 1000 / 60);
-					}
-				);
-			})();
+          ctx.globalAlpha = snowflake.opacity;
+          ctx.beginPath();
+          ctx.arc(snowflake.x, snowflake.y, snowflake.r, 0, Math.PI * 2, false);
+          ctx.closePath();
+          ctx.fill();
 
-			onResize();
-			window.addEventListener("resize", onResize, false);
+          if (
+            snowflake.y > height ||
+            snowflake.y < 0 ||
+            snowflake.x > width ||
+            snowflake.x < 0
+          ) {
+            snowflake.reset();
+          }
+        }
 
-			snowContainer.appendChild(canvas);
-		</script>
-	</body>
+        requestAnimFrame(update);
+      }
+
+      // shim layer with setTimeout fallback
+      window.requestAnimFrame = (function () {
+        return (
+          window.requestAnimationFrame ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame ||
+          function (callback) {
+            window.setTimeout(callback, 1000 / 60);
+          }
+        );
+      })();
+
+      onResize();
+      window.addEventListener("resize", onResize, false);
+
+      snowContainer.appendChild(canvas);
+    </script>
+  </body>
 </html>
